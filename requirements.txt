@@ -6,3 +6,6 @@ plotly
 kaleido
 nbformat
 ipykernel
+streamlit
+scikit-learn
+joblib
