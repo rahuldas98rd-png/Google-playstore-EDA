@@ -85,7 +85,7 @@ The raw dataset had significant quality issues across multiple columns — a rea
 
 Understanding data completeness before drawing any conclusions.
 
-![Missing Value Analysis](reports/missing_value_analysis.png)
+![Missing Value Analysis](Notebooks/reports/missing_value_analysis.png)
 
 > `Rating` has the highest missingness at **13.6% (1,474 apps)** — the only column requiring deliberate handling strategy.
 
@@ -95,7 +95,7 @@ Understanding data completeness before drawing any conclusions.
 
 Distribution of apps across Category, Type, Content Rating, and Genres.
 
-![Univariate Categorical](reports/Univariate_Analysis_of_Categorical_Features.png)
+![Univariate Categorical](Notebooks/reports/Univariate_Analysis_of_Categorical_Features.png)
 
 > **FAMILY** dominates with **~19% of all apps** (1,832), nearly double the second-largest category (GAME at 9.93%). Over **92.6% of apps are free**, confirming that the in-app purchase model has become the Android norm.
 
@@ -105,7 +105,7 @@ Distribution of apps across Category, Type, Content Rating, and Genres.
 
 Distribution of Rating, Reviews, Size, Installs, and Price.
 
-![Univariate Numerical](reports/Univariate_Analysis_of_Numerical_Features.png)
+![Univariate Numerical](Notebooks/reports/Univariate_Analysis_of_Numerical_Features.png)
 
 > Most numerical features are **right-skewed** — a small number of apps account for the vast majority of installs, reviews, and revenue. `Rating` is the exception, with a left-skewed cluster around **4.19 (mean)** and **4.30 (median)**.
 
@@ -115,7 +115,7 @@ Distribution of Rating, Reviews, Size, Installs, and Price.
 
 Which categories are most represented on the Play Store?
 
-![Most Popular Categories](reports/most_popular_categories.png)
+![Most Popular Categories](Notebooks/reports/most_popular_categories.png)
 
 | Rank | Category | App Count | Share |
 |---|---|---|---|
@@ -131,7 +131,7 @@ Which categories are most represented on the Play Store?
 
 Volume of apps ≠ volume of downloads. Here's where users actually spend their time.
 
-![Most Installed Categories](reports/Most_installed_categories.png)
+![Most Installed Categories](Notebooks/reports/Most_installed_categories.png)
 
 | Rank | Category | Total Installs |
 |---|---|---|
@@ -149,7 +149,7 @@ Volume of apps ≠ volume of downloads. Here's where users actually spend their 
 
 A per-category breakdown showing install concentration and spread.
 
-![App Installed by Category](reports/app_installed_by_category.png)
+![App Installed by Category](Notebooks/reports/app_installed_by_category.png)
 
 > GAME and COMMUNICATION show the widest install variance — a handful of blockbuster apps pull the category average far above the median, while most apps in these categories remain relatively obscure.
 
@@ -159,7 +159,7 @@ A per-category breakdown showing install concentration and spread.
 
 The outright leaders in download count across the entire dataset.
 
-![Top 10 Popular Apps](reports/Tpo_10_popular_apps.png)
+![Top 10 Popular Apps](Notebooks/reports/Tpo_10_popular_apps.png)
 
 > All top-installed apps cleared **100,000,000+ installs**. Titles like *Talking Ginger*, *Bitmoji*, and *Where's My Water?* dominate the FAMILY category — casual, wide-audience apps with strong retention loops.
 

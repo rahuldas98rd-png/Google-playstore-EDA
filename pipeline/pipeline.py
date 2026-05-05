@@ -30,13 +30,17 @@ class DataPipeline:
         cleaner = DataCleaning(df)
         df_clean = cleaner.clean()
 
+        # Save clean data (for UI)
+        clean_path = os.path.join(self.output_path, "clean.csv")
+        df_clean.to_csv(clean_path, index=False)
+
+        # Reports
+        reporter = ReportGenerator(df_clean)
+        reporter.generate()
+
         # Transformation
         transformer = DataTransformation(df_clean)
         df_final = transformer.transform()
-
-        # Reports
-        reporter = ReportGenerator(df_final)
-        reporter.generate()
 
         # ML Models
         trainer = ModelTrainer(df_final)
