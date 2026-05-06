@@ -5,7 +5,6 @@ from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 from sklearn.metrics import mean_squared_error, accuracy_score, confusion_matrix
 import numpy as np
 from utils.logger import get_logger
-import mlflow
 
 logger = get_logger()
 
@@ -16,6 +15,7 @@ class ModelTrainer:
         os.makedirs(self.model_dir, exist_ok=True)
 
     def train(self):
+        import mlflow
         logger.info("Training models")
 
         df = self.df.copy()
